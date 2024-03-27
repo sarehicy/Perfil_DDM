@@ -1,0 +1,116 @@
+@font-face{
+    font-family: PoppinsB;
+    src: url(font/Poppins-Bold.ttf)
+}
+@font-face{
+    font-family: PoppinsR;
+    src: url(font/Poppins-Regular.ttf)
+}
+
+body{
+    background-color: black;
+}
+
+.Janela{
+    position: relative;
+    top: 60px;
+    margin: auto;
+
+    width: 55%;
+    height: 460px;
+    background-color: #d1d1d1;
+    border-radius: 2.5px;
+
+    padding: 10px;
+}
+
+.window{
+    text-align: end;
+    font-size: 18px;
+    margin-top: 0;
+    margin-right: 2px;
+    margin-bottom: 10px;
+}
+
+.searchBar{
+    font-family: arial;
+    font-size: 18px;
+    background-color: #A76E6E;
+    margin: 0;
+}
+
+.content{
+    background-color: #ffff;
+    width: 100%;
+    height: 405px;
+
+    display: grid;
+    grid-template-columns: 2.6fr 3fr;
+    grid-template-rows: 30% 70% ;
+
+}
+
+.left{
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    justify-self: center;
+}
+
+.nome{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    margin: 0;
+    font-family: PoppinsB;
+    font-size: 40px;
+    line-height: 38px;
+
+    align-self: end;
+}
+
+.euz{
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    height: 85%;
+}
+
+.infos{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    background-color: #AF8484;
+    width: calc(100% - 20px);
+    height: calc(100% - 40px);
+    align-self: center;
+    justify-self: start;
+
+}
+
+.naveg{
+    font-family: Arial;
+    color: white;
+    text-decoration: underline;
+    margin-left: 20px;
+    font-size: 20px;
+    transition-duration: 100ms;
+}
+
+.naveg:hover{
+    font-size: 22px;
+}
+
+
+.coisans{
+    font-family: PoppinsR;
+    font-size: 18px;
+
+    margin-left: 40px;
+    margin-right: 30px;
+    margin-top: 50px;
+
+}
